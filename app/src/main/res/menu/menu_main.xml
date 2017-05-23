@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sense.geo.geosense.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_open_db"
+        android:orderInCategory="1"
+        android:title="@string/action_open_db"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clear_loctrack"
+        android:orderInCategory="1"
+        android:title="@string/action_clear_loctrack"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sense.geo.geosense.geofence.MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ToggleButton
+            android:id="@+id/b_add_marker"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="end|bottom|center_horizontal"
+            android:padding="10dp"
+            android:textOff="Remove Geofence"
+            android:textOn="Add Geofence"
+            android:visibility="gone" />
+    </fragment>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_map_marker_plus_white_48dp" />
+
+    <TextView
+        android:id="@+id/tv_locs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/background_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+</FrameLayout>
